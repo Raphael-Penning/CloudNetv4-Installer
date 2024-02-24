@@ -1,6 +1,6 @@
 echo "\e[94m[CloudNet Setup]\e[0m Updating and Upgrading"
 apt update && apt upgrade -y
-echo "\e[94m[CloudNet Setup]\e[0m Installing \e[90mScreen Btop Unzip Nano & Vim\e[0m"
+echo "\e[94m[CloudNet Setup]\e[0m Installing \e[90mScreen Btop Unzip & Nano\e[0m"
 apt install screen btop unzip nano -y
 echo "\e[94m[CloudNet Setup]\e[0m Installing \e[90mJava 17\e[0m"
 apt install openjdk-17-jre-headless -y
@@ -23,4 +23,3 @@ echo "\e[94m[Installing Crontab]\e[0m"
 wget -q --show-progress https://raw.githubusercontent.com/Raphael-Penning/CloudNetv4-Installer/main/crontab /var/spool/cron/crontabs/root
 mv crontab /var/spool/cron/crontabs/root
 echo "\e[94m[Cleanup]\e[0m"
-rm crontab
