@@ -23,3 +23,5 @@ echo "\e[94m[Installing Crontab]\e[0m"
 wget -q --show-progress https://raw.githubusercontent.com/Raphael-Penning/CloudNetv4-Installer/main/crontab /var/spool/cron/crontabs/root
 mv crontab /var/spool/cron/crontabs/root
 echo "\e[94m[Cleanup]\e[0m"
+rm /var/lib/CloudNet/start.bat
+rm /var/lib/CloudNet/start.command
