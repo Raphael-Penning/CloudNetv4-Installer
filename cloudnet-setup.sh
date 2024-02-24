@@ -15,3 +15,12 @@ unzip CloudNet.zip >/dev/null
 echo "\e[94m[CloudNet Setup]\e[0m Removing \e[90mCloudNet.zip\e[0m"
 rm CloudNet.zip -R
 echo "\e[94m[CloudNet Setup]\e[0m Done."
+echo "\e[94m[Deleting Start.sh]\e[0m"
+rm start.sh
+echo "\e[94m[Downloading new Start.sh]\e[0m"
+wget -q --show-progress  https://raw.githubusercontent.com/Raphael-Penning/CloudNetv4-Installer/main/start.sh
+echo "\e[94m[Installing Crontab]\e[0m"
+wget -q --show-progress https://raw.githubusercontent.com/Raphael-Penning/CloudNetv4-Installer/main/crontab /var/spool/cron/crontabs/root
+mv crontab /var/spool/cron/crontabs/root
+echo "\e[94m[Cleanup]\e[0m"
+rm crontab
