@@ -3,3 +3,5 @@
 use the following command:
 
 ```curl -s https://raw.githubusercontent.com/Raphael-Penning/CloudNetv4-Installer/main/cloudnet-setup.sh | sudo sh```
+
+this will install you CloudNet v4 RC9 in /var/lib/CloudNet and adds a Crontab and also setups the crontab correctly
