@@ -13,4 +13,5 @@ wget -q --show-progress https://github.com/CloudNetService/CloudNet-v3/releases/
 echo "\e[94m[CloudNet Setup]\e[0m Unzipping"
 unzip CloudNet.zip >/dev/null
 echo "\e[94m[CloudNet Setup]\e[0m Removing \e[90mCloudNet.zip\e[0m"
+rm CloudNet.zip -R
 echo "\e[94m[CloudNet Setup]\e[0m Done."
