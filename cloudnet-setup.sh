@@ -8,8 +8,15 @@ echo "\e[94m[CloudNet Setup]\e[0m Creating folder \e[90m/var/lib/CloudNet\e[0m"
 mkdir /var/lib/CloudNet
 echo "\e[94m[CloudNet Setup]\e[0m Going to \e[90m/var/lib/CloudNet\e[0m"
 cd /var/lib/CloudNet
+read -p "Which version do you want? Possible answers: v3 , v4" cloudnetversion
+if(cloufnetversion = "v3")
+then
 echo "\e[94m[CloudNet Setup]\e[0m Downloading \e[90mCloudNet v3.4.5\e[0m"
+wget -q --show-progress https://github.com/CloudNetService/CloudNet-v3/releases/download/v3.4.5/CloudNet.zip
+else
+echo "\e[94m[CloudNet Setup]\e[0m Downloading \e[90mCloudNet v4\e[0m"
 wget -q --show-progress https://github.com/CloudNetService/CloudNet-v3/releases/download/4.0.0-RC9/CloudNet.zip
+fi
 echo "\e[94m[CloudNet Setup]\e[0m Unzipping"
 unzip CloudNet.zip >/dev/null
 echo "\e[94m[CloudNet Setup]\e[0m Removing \e[90mCloudNet.zip\e[0m"
