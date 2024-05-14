@@ -1,12 +1,16 @@
-# CloudNetv4-Installer
-Credits to @Noriskky for providing the base of the script.
+# Cloudnet Installer
 
-### Installation
+This is script will install you **CloudNetV4**
 
-**Debian**:
+## Usage
 
-```curl -s https://raw.githubusercontent.com/Raphael-Penning/CloudNetv4-Installer/main/cloudnet-setup.sh | sudo sh```
+You can use it with the following Command:
 
-The Script will install Cloudnet to ```/var/lib/CloudNet``` and setup Crontab
+```bash
+curl -sSL https://raw.githubusercontent.com/Raphael-Penning/CloudNetv4-Installer/main/cloudnet-setup.sh | sudo sh
+```
 
+> It will install in to the ``/var/lib/CloudNet`` Directory and also setup a Crontab Task to start it everytime the System boots.
 
+> [!IMPORTANT]
+> This will only work if you are on a **Debian** or **Debian based** System
